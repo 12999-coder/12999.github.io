@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | ชื่อของคุณ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { fontFamily: { sans: ['Prompt', 'sans-serif'] } } }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold text-indigo-600">PORTFOLIO</a>
+      <nav class="hidden sm:flex gap-6 text-sm font-medium">
+        <a href="#about" class="hover:text-indigo-600">เกี่ยวกับฉัน</a>
+        <a href="#projects" class="hover:text-indigo-600">ผลงาน</a>
+        <a href="#contact" class="hover:text-indigo-600">ติดต่อ</a>
+      </nav>
+      <button id="theme-btn" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-200 dark:bg-slate-800">
+        สลับธีม
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-5xl mx-auto px-4 py-20 flex flex-col-reverse sm:flex-row items-center gap-10">
+    <div class="flex-1 text-center sm:text-left space-y-4">
+      <p class="text-sm font-medium text-indigo-600">สวัสดีครับ, ผมชื่อ</p>
+      <h1 class="text-4xl sm:text-5xl font-bold">ธนกร วัฒนากูล</h1>
+      <p class="text-lg text-slate-600 dark:text-slate-400">Web Developer & UI/UX Designer</p>
+      <p class="text-sm text-slate-500 max-w-md mx-auto sm:mx-0">
+        ออกแบบและพัฒนาเว็บไซต์ที่ทันสมัย ใช้งานง่าย และตอบโจทย์ธุรกิจของคุณ
+      </p>
+      <div class="pt-2 flex justify-center sm:justify-start gap-3">
+        <a href="#projects" class="px-5 py-2.5 rounded-xl bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700">ดูผลงาน</a>
+        <a href="#contact" class="px-5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 text-sm font-medium">ติดต่อ</a>
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" 
+         alt="Profile" class="w-48 h-48 sm:w-60 sm:h-60 rounded-full object-cover shadow-lg border-4 border-white dark:border-slate-800" />
+  </section>
+
+  <!-- About & Skills -->
+  <section id="about" class="bg-white dark:bg-slate-800/50 py-16 px-4">
+    <div class="max-w-5xl mx-auto space-y-6">
+      <h2 class="text-2xl font-bold text-center">เกี่ยวกับฉัน & ทักษะ</h2>
+      <p class="text-center text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-sm leading-relaxed">
+        นักพัฒนาเว็บไซต์ที่มีประสบการณ์กว่า 4 ปี เชี่ยวชาญการสร้างเว็บแอปพลิเคชันที่รวดเร็วและสวยงาม ใส่ใจทั้งประสบการณ์ผู้ใช้และคุณภาพของโค้ด
+      </p>
+      <div class="flex flex-wrap justify-center gap-2 pt-2">
+        <span class="px-4 py-1.5 rounded-full text-xs font-medium bg-indigo-50 text-indigo-600 dark:bg-indigo-900/40 dark:text-indigo-300">HTML / CSS</span>
+        <span class="px-4 py-1.5 rounded-full text-xs font-medium bg-indigo-50 text-indigo-600 dark:bg-indigo-900/40 dark:text-indigo-300">Tailwind CSS</span>
+        <span class="px-4 py-1.5 rounded-full text-xs font-medium bg-indigo-50 text-indigo-600 dark:bg-indigo-900/40 dark:text-indigo-300">JavaScript</span>
+        <span class="px-4 py-1.5 rounded-full text-xs font-medium bg-indigo-50 text-indigo-600 dark:bg-indigo-900/40 dark:text-indigo-300">React / Next.js</span>
+        <span class="px-4 py-1.5 rounded-full text-xs font-medium bg-indigo-50 text-indigo-600 dark:bg-indigo-900/40 dark:text-indigo-300">Node.js</span>
+        <span class="px-4 py-1.5 rounded-full text-xs font-medium bg-indigo-50 text-indigo-600 dark:bg-indigo-900/40 dark:text-indigo-300">Figma</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold text-center mb-10">ผลงานเด่น</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <!-- Project 1 -->
+      <div class="rounded-2xl overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Project 1" class="w-full h-40 object-cover" />
+        <div class="p-5 space-y-2">
+          <h3 class="font-bold">ระบบจัดการร้านค้า (POS)</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400">เว็บแอปพลิเคชันสำหรับเช็กสต็อกและสรุปยอดขายแบบเรียลไทม์</p>
+          <a href="#" class="inline-block text-xs font-medium text-indigo-600 pt-1">ดูตัวอย่าง &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="rounded-2xl overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Project 2" class="w-full h-40 object-cover" />
+        <div class="p-5 space-y-2">
+          <h3 class="font-bold">เว็บไซต์ E-Commerce</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400">ร้านค้าออนไลน์รองรับระบบตะกร้าสินค้าและการชำระเงิน</p>
+          <a href="#" class="inline-block text-xs font-medium text-indigo-600 pt-1">ดูตัวอย่าง &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="rounded-2xl overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=600&q=80" alt="Project 3" class="w-full h-40 object-cover" />
+        <div class="p-5 space-y-2">
+          <h3 class="font-bold">แอปพลิเคชันจองคิวคลินิก</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400">ออกแบบ UI/UX และพัฒนาระบบนัดหมายแพทย์ผ่านมือถือ</p>
+          <a href="#" class="inline-block text-xs font-medium text-indigo-600 pt-1">ดูตัวอย่าง &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white dark:bg-slate-800/50 py-16 px-4">
+    <div class="max-w-md mx-auto space-y-6">
+      <div class="text-center">
+        <h2 class="text-2xl font-bold">ติดต่อฉัน</h2>
+        <p class="text-xs text-slate-500 mt-1">อีเมล: thanakorn@example.com | โทร: 089-123-4567</p>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('ส่งข้อความเรียบร้อยแล้ว!'); this.reset();" class="space-y-3">
+        <input type="text" required placeholder="ชื่อของคุณ" class="w-full px-4 py-2.5 rounded-xl text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700" />
+        <input type="email" required placeholder="อีเมล" class="w-full px-4 py-2.5 rounded-xl text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700" />
+        <textarea rows="3" required placeholder="ข้อความ..." class="w-full px-4 py-2.5 rounded-xl text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700"></textarea>
+        <button type="submit" class="w-full py-2.5 rounded-xl bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700">ส่งข้อความ</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-xs text-slate-500 border-t border-slate-200 dark:border-slate-800">
+    &copy; 2026 ธนกร วัฒนากูล. All rights reserved.
+  </footer>
+
+  <!-- Script สลับโหมดมืด/สว่าง -->
+  <script>
+    document.getElementById('theme-btn').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
